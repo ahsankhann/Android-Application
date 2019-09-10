@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="3">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Picker"
+        android:textAlignment="center"
+        android:id="@+id/DatePickerDaily"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:keyboardNavigationCluster="false"
+        android:layout_weight="0"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Food Expense:"
+                android:textSize="14dp" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:id="@+id/foodedt"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:text="Petrol Expense:"
+                android:textSize="14dp"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:id="@+id/petroledt"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:text="Cigarette Expense:"
+                android:textSize="14dp"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:id="@+id/cigaretteedt"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:text="Other Expense:"
+                android:textSize="14dp"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:id="@+id/otheredt"
+                android:inputType="number"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TableRow android:weightSum="2" >
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:id="@+id/calcelbtn"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Save Record"
+                android:id="@+id/savebtn"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
